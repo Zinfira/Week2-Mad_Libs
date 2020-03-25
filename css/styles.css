@@ -1,3 +1,7 @@
-#story {
+ .container {
+   margin:10%;
+   padding: 10%;
+ }
+ #story {
   display: none;
-}
+} 

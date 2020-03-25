@@ -1,7 +1,8 @@
 $(document).ready(function() {
-  $("form0ne").submit(function(event) {
+  $("#form0ne").submit(function(event) {
+    event.preventDefault();
     var adjective1Input = $("input#adjective1").val();
-    var animalInput = $("input#animal").val
+    var animalInput = $("input#animal").val();
     var adjective2Input = $("input#adjective2").val();
     var nameInput = $("input#name").val();
     var adjective3Input = $("input#adjective3").val();
@@ -14,7 +15,9 @@ $(document).ready(function() {
     var verb3Input = $("input#verb3").val();
     var verb4Input = $("input#verb4").val();
     var personInput = $("input#person").val();
-  
+
+    console.log(adjective1Input, animalInput, adjective2Input, nameInput);
+
     $(".adjective1").text(adjective1Input); 
     $(".animal").text(animalInput);
     $(".adjective2").text(adjective2Input);
@@ -32,6 +35,6 @@ $(document).ready(function() {
 
     $("#story").show();
 
-    event.preventDefault();
+    
   });
 });
