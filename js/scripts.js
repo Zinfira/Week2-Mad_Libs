@@ -11,6 +11,27 @@ $(document).ready(function() {
     var verb1Input = $("input#verb1").val();
     var verb2Input = $("input#verb2").val();
     var nounInput = $("input#noun").val();
-    var adjective2Input = $("input#adjective2").val();
-  })
-})
+    var verb3Input = $("input#verb3").val();
+    var verb4Input = $("input#verb4").val();
+    var personInput = $("input#person").val();
+  
+    $(".adjective1").text(adjective1Input); 
+    $(".animal").text(animalInput);
+    $(".adjective2").text(adjective2Input);
+    $(".name").text(nameInput);
+    $(".adjective3").text(adjective3Input);
+    $(".adjective4").text(adjective4Input);
+    $(".adjective5").text(adjective5Input);
+    $(".adjective6").text(adjective6Input);
+    $(".verb1").text(verb1Input);
+    $(".verb2").text(verb2Input);
+    $(".noun").text(nounInput);
+    $(".verb3").text(verb3Input);
+    $(".verb4").text(verb4Input);
+    $(".person").text(personInput);
+
+    $("#story").show();
+
+    event.preventDefault();
+  });
+});
