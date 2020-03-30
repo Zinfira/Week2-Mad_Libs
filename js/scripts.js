@@ -20,9 +20,9 @@ $(document).ready(function() {
     blanks.forEach(function(blank) {
       var userInput = $("input#" + blank).val();
       $("." + blank).text(userInput);
-    })
+    });
     
-
+    
     /*
     $(".adjective1").text(adjective1Input); 
     $(".animal").text(animalInput);
@@ -43,5 +43,12 @@ $(document).ready(function() {
     $("#story").show();
 
     
+  });
+
+  $("h1").click(function() {
+    alert("This is a header.");
+  });
+  $("p").click(function() {
+    alert("This is a paragraph.");
   });
 });
